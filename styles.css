@@ -65,7 +65,7 @@ hr.solid {
     margin-top: 12px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-bottom: 76px;
+    margin-bottom: 90px;
 
     display: flex;
     align-items: center;
@@ -84,11 +84,20 @@ hr.solid {
 .option ul {
     text-align: left;
 
+
     list-style: none;
+}
+
+.radio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .array-settings-options > li {
     margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="radio"] {
@@ -99,15 +108,20 @@ input[type="text"] {
     border: none;
     border-radius: 4px;
     overflow: auto;
+    font-size: 14px;
     padding-left: 8px;
     background: rgba(0, 0, 0, 0.071);
 
     font-family: Proportional-Mono;
 }
 
+.text-box1 {
+    width: 182px;
+}
+
 .number {
     padding-left: 8px;
-    width: 80px;
+    width: 84px;
 }
 
 label {
@@ -124,6 +138,33 @@ label {
     border: 2px solid black;
     border-radius: 50%;
     margin-right: 4px;
+}
+
+.generate-button {
+    font-family: Proportional-Mono;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 8px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.071);
+
+    transition: background 0.2s, color 0.2s;
+}
+
+.generate-button:hover {
+    background: #F45C43;
+    color: white;
+    
+    transition: background 0.2s, color 0s;
+}
+
+.generate-button:active {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    
+    transition: 0s;
 }
 
 input[type="radio"]:checked + .radio-label:before {

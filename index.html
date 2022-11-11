@@ -18,7 +18,7 @@
             <div class="form">
                 <div class="option">
                     array type
-                    <ul class="array-type-options">
+                    <ul class="array-type-options radio-list">
                         <li>
                             <input type="radio" name="array-type" id="linear" checked="checked">
                             <label for="linear" class="radio-label">linear (steps)</label>
@@ -27,11 +27,14 @@
                             <input type="radio" name="array-type" id="random">
                             <label for="random" class="radio-label">random (range)</label>
                         </li>
+                        <li>
+                            <button class="generate-button">generray!</button>
+                        </li>
                     </ul>
                 </div>
                 <div class="option">
                     data type
-                    <ul class="data-type-options">
+                    <ul class="data-type-options radio-list">
                         <li>
                             <input type="radio" name="data-type" id="int" checked="checked">
                             <label for="int" class="radio-label">int</label>
@@ -54,17 +57,19 @@
                     array settings
                     <ul class="array-settings-options">
                         <li>
-                            <label for="size">size</label>
-                            <input type="text" name="array-setting" id="size" placeholder="integer">
+                            <label for="size" class="text-label">size</label>
+                            <input type="text" name="array-setting" id="size" placeholder="integer" value="5" class="text-box1">
                         </li>
                         <li>
-                            <label for="steps">steps</label>
-                            <input type="text" name="array-setting" id="steps" placeholder="integer (linear)">
+                            <label for="steps" class="text-label">steps</label>
+                            <input type="text" name="array-setting" id="steps" placeholder="integer (linear)" value="3" class="text-box1">
                         </li>
                         <li>
-                            <label for="range">range</label>
-                            <input type="text" name="array-setting" id="range" placeholder="min" class="number">
-                            <input type="text" name="array-setting" id="range" placeholder="max (random)" class="number">
+                            <label for="range" class="text-label">range</label>
+                            <div>
+                                <input type="text" name="array-setting" id="range" placeholder="min" class="number">
+                                <input type="text" name="array-setting" id="range" placeholder="max (rand)" class="number">
+                            </div>
                         </li>
                     </ul>
                 </div>
