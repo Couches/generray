@@ -33,7 +33,7 @@ let setValues = () =>
 
 function randomChar()
 {
-    return characters.charAt(Math.floor(Math.random() * characters.length));
+    return characters.charAt((Math.floor(Math.random() * (max - min) + min)) % characters.length);
 }
 
 function generateArray()
