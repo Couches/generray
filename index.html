@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generray</title>
+</head>
+<body>
+    <div class="page-content">
+        <div class="header">
+            <p>generray</p>
+            <hr class="solid">
+        </div>
+        
+        <div class="array-options">
+            <div class="form">
+                <div class="option">
+                    array type
+                    <ul class="array-type-options">
+                        <li>
+                            <input type="radio" name="array-type" id="linear" checked="checked">
+                            <label for="linear" class="radio-label">linear (steps)</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="array-type" id="random">
+                            <label for="random" class="radio-label">random (range)</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="option">
+                    data type
+                    <ul class="data-type-options">
+                        <li>
+                            <input type="radio" name="data-type" id="int" checked="checked">
+                            <label for="int" class="radio-label">int</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="data-type" id="double">
+                            <label for="double" class="radio-label">double</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="data-type" id="char">
+                            <label for="char" class="radio-label">char</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="data-type" id="String">
+                            <label for="String" class="radio-label">String</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="option">
+                    array settings
+                    <ul class="array-settings-options">
+                        <li>
+                            <label for="size">size</label>
+                            <input type="text" name="array-setting" id="size" placeholder="integer">
+                        </li>
+                        <li>
+                            <label for="steps">steps</label>
+                            <input type="text" name="array-setting" id="steps" placeholder="integer (linear)">
+                        </li>
+                        <li>
+                            <label for="range">range</label>
+                            <input type="text" name="array-setting" id="range" placeholder="min" class="number">
+                            <input type="text" name="array-setting" id="range" placeholder="max (random)" class="number">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="solid">
+        </div>
+
+        <div class="output">
+            
+        </div>
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>

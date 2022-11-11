@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Signika;
+    src: url("Signika.ttf");
+}
+
+@font-face {
+    font-family: Proportional-Mono;
+    src: url("Proportional-Mono.woff2");
+}
+
+:root {
+    --accent-color: #F45C43;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: var(--accent-color);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+hr.solid {
+    border: 1px solid #ececec;
+}
+
+.page-content {
+    margin: 32px;
+
+    width: 100vw;
+    max-width: 900px;
+    min-width: 760px;
+    height: 600px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    font-family: Proportional-Mono, 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.header {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 24px;
+}
+
+.header p {
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+
+.form {
+    margin-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.option {
+    width: 100%;
+    max-width: 250px;
+    height: 60px;
+    text-align: center;
+
+    font-size: 19px;
+}
+
+.option ul {
+    text-align: left;
+
+    list-style: none;
+}
+
+.array-settings-options > li {
+    margin-bottom: 6px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 4px;
+    overflow: auto;
+    padding-left: 8px;
+    background: rgba(0, 0, 0, 0.071);
+
+    font-family: Proportional-Mono;
+}
+
+.number {
+    padding-left: 8px;
+    width: 80px;
+}
+
+label {
+    text-align: center;
+
+    position: relative;
+}
+
+.radio-label:before {
+    display: inline-block;
+    content: "";
+    height: 6px;
+    width: 6px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+input[type="radio"]:checked + .radio-label:before {
+    background-color: white;
+    border-color: var(--accent-color);
+}
+
+input[type="radio"]:checked + .radio-label {
+    color: var(--accent-color);
+}
