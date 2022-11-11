@@ -17,7 +17,7 @@
         <div class="array-options">
             <div class="form">
                 <div class="option">
-                    array type
+                    <span class="list-header">array type</span>
                     <ul class="array-type-options radio-list">
                         <li>
                             <input type="radio" name="array-type" id="linear" checked="checked">
@@ -28,12 +28,12 @@
                             <label for="random" class="radio-label">random (range)</label>
                         </li>
                         <li>
-                            <button class="generate-button">generray!</button>
+                            <button class="generate-button" onclick="generateArray()">generray!</button>
                         </li>
                     </ul>
                 </div>
                 <div class="option">
-                    data type
+                    <span class="list-header">data type</span>
                     <ul class="data-type-options radio-list">
                         <li>
                             <input type="radio" name="data-type" id="int" checked="checked">
@@ -54,7 +54,7 @@
                     </ul>
                 </div>
                 <div class="option">
-                    array settings
+                    <span class="list-header">array settings</span>
                     <ul class="array-settings-options">
                         <li>
                             <label for="size" class="text-label">size</label>
@@ -67,8 +67,8 @@
                         <li>
                             <label for="range" class="text-label">range</label>
                             <div>
-                                <input type="text" name="array-setting" id="range" placeholder="min" class="number">
-                                <input type="text" name="array-setting" id="range" placeholder="max (rand)" class="number">
+                                <input type="text" name="array-setting" id="range-min" placeholder="min" value="8" class="number">
+                                <input type="text" name="array-setting" id="range-max" placeholder="max (rand)" class="number">
                             </div>
                         </li>
                     </ul>
@@ -77,7 +77,7 @@
             <hr class="solid">
         </div>
 
-        <div class="output">
+        <div id="output">
             
         </div>
     </div>
