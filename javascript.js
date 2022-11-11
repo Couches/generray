@@ -16,7 +16,7 @@ let steps;
 let min;
 let max = 0;
 
-
+let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 let setValues = () =>
 {
@@ -33,7 +33,6 @@ let setValues = () =>
 
 function randomChar()
 {
-    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     return characters.charAt(Math.floor(Math.random() * characters.length));
 }
 
@@ -78,7 +77,8 @@ function generateArray()
         }
         else
         {
-            output += "'" + randomChar() + "'";
+            if (arrayType == "random") output += "'" + randomChar() + "'";
+            else output += characters.charAt((i * steps) % characters.length);
         }
 
         if (i < size - 1) output += ", ";
